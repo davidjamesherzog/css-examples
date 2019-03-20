@@ -1,1 +1,3 @@
 Coming soon...
+
+https://css-tricks.com/the-complete-guide-to-lazy-loading-images/

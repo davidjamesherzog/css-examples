@@ -1,0 +1,11 @@
+ul li {
+  display: inline-block;
+}
+
+#play, #pause {
+  cursor: pointer;
+}
+
+#pause {
+  display: none;
+}
