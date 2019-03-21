@@ -1,0 +1,88 @@
+<!doctype html>
+<html >
+
+<head>
+  <title>Horizontal Scrolling</title>
+  <link preload rel="stylesheet" href="../../code-formatter.css">
+  <link preload rel="stylesheet" href="horizontal-scroll.css">
+</head>
+
+<body>
+
+  <!-- based on https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 -->
+
+  <h1>Scrolling Horizontally  without Flexbox</h1>
+
+  <p>This is an example that will work on all browsers except for IE and Edge</p>
+
+  <pre class="computerGreen codeStyler">
+    <code >
+      .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+      
+      .scrolling-wrapper .card {
+        display: inline-block;
+      }
+  
+      .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+    </code>
+  </pre>
+  
+  <br/>
+
+  <div class="scrolling-wrapper">
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+  </div>
+
+  <h1>Scrolling Horizontally with Flexbox</h1>
+
+  <p>This is an example that will work on all evergreen browsers</p>
+
+  <pre class="computerGreen codeStyler"> 
+    <code>
+      scrolling-wrapper-flexbox {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+      
+      .scrolling-wrapper-flexbox .card {
+        flex: 0 0 auto;
+        margin-right: 3px;
+      }
+  
+      .scrolling-wrapper-flexbox::-webkit-scrollbar {
+        display: none;
+      }
+    </code>
+  </pre>
+
+  <br/>
+
+  <div class="scrolling-wrapper-flexbox">
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+    <div class="card"><h2>Card</h2></div>
+  </div>
+
+</body>
+</html>
