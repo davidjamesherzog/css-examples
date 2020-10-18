@@ -1,0 +1,107 @@
+.flex-shape {
+  display: flex;
+  align-items: stretch;
+}
+
+.grid-fixed {
+  flex-grow: 2;
+}
+
+.grid-fill {
+  flex-grow: 1;
+}
+
+.margin {
+  margin: 1em 0 1em 2em;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container-order-el1 {
+  order: 3
+}
+
+.flex-container-order-el2 {
+  order: 2
+}
+
+.flex-container-order-el3 {
+  order: 4
+}
+
+.flex-container-order-el4 {
+  order: 1
+}
+
+.flex-container-grow-el1 {
+  flex-grow: 1
+}
+
+.flex-container-grow-el2 {
+  flex-grow: 1
+}
+
+.flex-container-grow-el3 {
+  flex-grow: 8
+}
+
+.flex-container-shrink {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container-shrink > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container-shrink-el3 {
+  flex-shrink: 0
+}
+
+.flex-container-align-self {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+
+.flex-container-align-self > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container-align-self-el1 {
+  align-self: flex-start
+}
+
+.flex-container-align-self-el2 {
+  align-self: center
+}
+
+.flex-container-align-self-el3 {
+  align-self: flex-end
+}

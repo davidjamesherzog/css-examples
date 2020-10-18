@@ -1,0 +1,213 @@
+<!doctype html>
+<html >
+
+<head>
+  <title>Flexbox Items</title>
+  <link preload rel="stylesheet" href="../../code-formatter.css">
+  <link preload rel="stylesheet" href="flexbox-items.css">
+</head>
+
+<body>
+
+<h1>Flexbox</h1>
+
+<h2>Flexbox Items</h2>
+
+<div class="flex-shape">
+
+  <div class="grid-fixed">
+    <p>All examples will have the same start flexbox CSS</p>
+    <div class="flex-container margin">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </div>
+
+  <div class="grid-fill">
+      <pre class="computerGreen codeStyler">
+        <code>
+  .flex-container {
+    display: flex;
+    background-color: #f1f1f1;
+  }
+
+  .flex-container > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+        </code>
+      </pre>
+  </div>
+
+</div>
+
+<h2>Items Order</h2>
+
+<div class="flex-shape">
+
+  <div class="grid-fixed">
+    <div class="flex-container margin">
+      <div class="flex-container-order-el1">1</div>
+      <div class="flex-container-order-el2">2</div>
+      <div class="flex-container-order-el3">3</div>
+      <div class="flex-container-order-el4">4</div>
+    </div>
+  </div>
+
+  <div class="grid-fill">
+      <pre class="computerGreen codeStyler">
+        <code>
+  .flex-container-order-el1 {
+    order: 3
+  }
+
+  .flex-container-order-el2 {
+    order: 2
+  }
+
+  .flex-container-order-el3 {
+    order: 4
+  }
+
+  .flex-container-order-el4 {
+    order: 1
+  }
+        </code>
+      </pre>
+  </div>
+
+</div>
+
+<h2>Items Grow</h2>
+
+<div class="flex-shape">
+
+  <div class="grid-fixed">
+    <div class="flex-container margin">
+      <div class="flex-container-grow-el1">1</div>
+      <div class="flex-container-grow-el2">2</div>
+      <div class="flex-container-grow-el3">3</div>
+    </div>
+  </div>
+
+  <div class="grid-fill">
+      <pre class="computerGreen codeStyler">
+        <code>
+  .flex-container-grow-el1 {
+    flex-grow: 1
+  }
+
+  .flex-container-grow-el2 {
+    flex-grow: 1
+  }
+
+  .flex-container-grow-el3 {
+    flex-grow: 8
+  }
+        </code>
+      </pre>
+  </div>
+
+</div>
+
+<h2>Items Shrink</h2>
+
+<div class="flex-shape">
+
+  <div class="grid-fixed">
+    <div class="flex-container-shrink margin">
+      <div>1</div>
+      <div>2</div>
+      <div class="flex-container-shrink-el3">3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </div>
+
+  <div class="grid-fill">
+      <pre class="computerGreen codeStyler">
+        <code>
+  .flex-container-shrink {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+  }
+
+  .flex-container-shrink > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container-shrink-el3 {
+    flex-shrink: 0
+  }
+        </code>
+      </pre>
+  </div>
+
+</div>
+
+<h2>Items Align Self</h2>
+
+<div class="flex-shape">
+
+  <div class="grid-fixed">
+    <div class="flex-container-align-self margin">
+      <div class="flex-container-align-self-el1">1</div>
+      <div class="flex-container-align-self-el2">2</div>
+      <div class="flex-container-align-self-el3">3</div>
+      <div class="flex-container-align-self-el4">4</div>
+    </div>
+  </div>
+
+  <div class="grid-fill">
+      <pre class="computerGreen codeStyler">
+        <code>
+  .flex-container {
+    display: flex;
+    height: 200px;
+    background-color: #f1f1f1;
+  }
+
+  .flex-container > div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container-align-self-el1 {
+    align-self: flex-start
+  }
+
+  .flex-container-align-self-el2 {
+    align-self: center
+  }
+
+  .flex-container-align-self-el3 {
+    align-self: flex-end
+  }
+        </code>
+      </pre>
+  </div>
+
+</div>
+
+</body>
+
+</html>
