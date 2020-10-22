@@ -1,0 +1,25 @@
+{
+  "name": "css-examples",
+  "version": "1.0.0",
+  "description": "css examples",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "./node_modules/http-server/bin/http-server --p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidjamesherzog/css-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidjamesherzog/css-examples/issues"
+  },
+  "homepage": "https://github.com/davidjamesherzog/css-examples#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
