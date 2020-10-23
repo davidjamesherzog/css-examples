@@ -1,0 +1,13 @@
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.translate {
+  transition: transform;
+}
+
+.translate:hover {
+  transform: translate(50px, 50px);
+}

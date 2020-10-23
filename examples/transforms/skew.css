@@ -1,0 +1,29 @@
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.skew {
+  transition: transform;
+}
+
+.skew:hover {
+  transform: skew(30deg, 30deg);
+}
+
+.skewX {
+  transition: transform;
+}
+
+.skewX:hover {
+  transform: skewX(30deg);
+}
+
+.skewY {
+  transition: transform;
+}
+
+.skewY:hover {
+  transform: skewY(30deg);
+}

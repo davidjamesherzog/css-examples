@@ -1,0 +1,29 @@
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.scale {
+  transition: transform;
+}
+
+.scale:hover {
+  transform: scale(2, 2);
+}
+
+.scaleX {
+  transition: transform;
+}
+
+.scaleX:hover {
+  transform: scaleX(2);
+}
+
+.scaleY {
+  transition: transform;
+}
+
+.scaleY:hover {
+  transform: scaleY(2);
+}
