@@ -20,8 +20,15 @@ function justifyContent(id, container) {
   });
 }
 
+function alignItems(id, container) {
+  $(id).addEventListener('click', (value) => {
+    container.style.alignItems = $(id).value;
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const flexbox = $('flexbox');
+  const flexbox2 = $('flexbox2');
 
   // flex-direction
   flexDirection('column', flexbox);
@@ -40,4 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
   justifyContent('flex-end', flexbox);
   justifyContent('space-around', flexbox);
   justifyContent('space-between', flexbox);
+
+  // align-items
+  alignItems('align-items-center', flexbox2);
+  alignItems('align-items-flex-start', flexbox2);
+  alignItems('align-items-flex-end', flexbox2);
+  alignItems('align-items-stretch', flexbox2);
+  alignItems('align-items-baseline', flexbox2);
 });
